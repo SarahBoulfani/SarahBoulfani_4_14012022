@@ -354,6 +354,11 @@ a:hover {
 .nav-invert .navbar .nav {
     float: left;
 }
+/* Ajout de la propriété flex pour le responsive de la nav */
+.navbar-header{
+    display: flex;
+    justify-content: space-between;
+}
 
 .nav-invert .navbar-header,
 .nav-invert .navbar-brand {

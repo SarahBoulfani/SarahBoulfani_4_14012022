@@ -675,10 +675,10 @@ a {
     max-width: 520px;
     margin: auto auto auto auto;
 }
-
-p {
-    font-size: 11px;
-}
+/* Modification de la font-size car trop petite et pas bon pour SEO */
+ p {
+    font-size: 15px;
+} 
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -698,10 +698,12 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
+/* Ajout de la propriété flex pour aligner horizontalement les icon et les centrer */
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -738,9 +740,10 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
-
+/* Ajout de la propriété width 100% pour le responsive des img*/
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
@@ -858,6 +861,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+    
 }
 
 @media (max-width: 991px) {
@@ -1026,6 +1030,9 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .social{
+        padding: 10px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1040,7 +1047,7 @@ h4 {
         text-align: center;
     }
 }
-
+/* Ajout d'une classe pour la citation */
 .citation{
     font-style: italic;
     font-size: 24px;
@@ -1049,3 +1056,20 @@ h4 {
 .citation + span{
    color: #000000;
 }
+/*footer*/
+.partenaire{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  
+}
+
+.partenaire li{
+   list-style: none;
+
+}
+.partenaire li a{
+    color: #FFF !important;
+    text-decoration: underline;
+ 
+ }

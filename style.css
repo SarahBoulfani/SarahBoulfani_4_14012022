@@ -406,6 +406,7 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+   
 }
 
 .nav > li > .dropdown a {
@@ -1034,6 +1035,11 @@ h4 {
     .social{
         padding: 10px;
     }
+    .contact{
+        margin: 30px;
+        padding: 1px 0;
+        
+    }
 }
 
 @media (max-width: 400px) {
@@ -1075,4 +1081,13 @@ h4 {
  }
  .partenaire a:hover{
      color: #F3C351 !important;
+ }
+ /*Modification de la partie info de la page contact*/
+ .contact{
+    
+    height: 255px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .contact p{
+     font-size: 18px;
  }
